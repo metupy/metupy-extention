@@ -24,18 +24,20 @@ Metupy IntelliSense is a Visual Studio Code extension that provides full syntax 
 
 - Syntax Highlighting for .pym file format
 - Frontmatter key-value highlighting
-- Template variables {{ }} and logic tags {% %}
-- Comment support {# #} and # line comment
+- Template variables `{{ }}` and logic tags {% %}
+- Comment support `{# #}`
 - Embedded Markdown and Python syntax
 - Auto-closing pairs and smart indentation
-- Custom file icon for .pym files
+- Custom file icon for `.pym` files
 
 ## Installation
 
 ### Install from VS Code Marketplace
 Open Command Palette (Ctrl+Shift+P) and run:
 
+```text
 ext install PalembangPyCommunity.metupy-intellisense
+```
 
 ### Manual Installation
 1. Download the .vsix file from Releases page
@@ -48,19 +50,26 @@ ext install PalembangPyCommunity.metupy-intellisense
 ### Install Metupy
 Run this command in your terminal:
 
+```bash
 pip install metupy
+```
 
 ### Verify Installation
+
+```bash
 metupy --version
+```
 
 ## Quick Start
 
 ### Create a New Project
-metupy init my-site
-cd my-site
+
+```bash
+metupy init my-site && cd my-site
+```
 
 ### Create Content File
-Create a file named index.pym inside content folder:
+Create a file named `index.pym` inside content folder:
 
 ```markdown
 title: Welcome to Metupy
@@ -89,11 +98,13 @@ metupy build
 
 `.pym` file uses simple structure:
 
+```markdown
 key: value
 another_key: another value
 ---
 
-Your content here with `{{ variables }}` and `{% logic %}`
+Your content here with {{ variables }} and {% logic %}
+```
 
 ## Syntax Reference
 
@@ -101,7 +112,7 @@ Your content here with `{{ variables }}` and `{% logic %}`
 - Logic: `{% for item in list %} ... {% endfor %}`
 - Condition: `{% if condition %} ... {% endif %}`
 - Comment: `{# This is a comment #}`
-- Frontmatter: key: value above --- separator
+- Frontmatter: `key: value` above `---` separator
 
 ## About Metupy
 
