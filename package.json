@@ -3,7 +3,7 @@
   "publisher": "PalembangPyCommunity",
   "displayName": "Metupy IntelliSense",
   "description": "Official IntelliSense & Syntax Highlighting for Metupy (.pym) file format — Project by PalembangPy Community",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.80.0"
@@ -67,6 +67,12 @@
           "meta.embedded.markdown": "markdown",
           "meta.embedded.block.python": "python"
         }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "pym",
+        "path": "./snippets/pym.json"
       }
     ]
   }

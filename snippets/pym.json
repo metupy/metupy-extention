@@ -1,0 +1,60 @@
+{
+  "Basic Frontmatter": {
+    "prefix": "pym-frontmatter",
+    "body": [
+      "title: ${1:Page title}",
+      "author: ${2:Author name}",
+      "date: ${3:2026-08-28}",
+      "---",
+      "",
+      "${0}"
+    ],
+    "description": "Create basic Metupy frontmatter"
+  },
+  "Template Variable": {
+    "prefix": "pym-var",
+    "body": "{{ ${1:variable} }}$0",
+    "description": "Insert a Metupy template variable"
+  },
+  "If Condition": {
+    "prefix": "pym-if",
+    "body": [
+      "{% if ${1:condition} %}",
+      "\t${0}",
+      "{% endif %}"
+    ],
+    "description": "Create an if condition block"
+  },
+  "For Loop": {
+    "prefix": "pym-for",
+    "body": [
+      "{% for ${1:item} in ${2:items} %}",
+      "\t${0}",
+      "{% endfor %}"
+    ],
+    "description": "Create a for loop block"
+  },
+  "Template Block": {
+    "prefix": "pym-block",
+    "body": [
+      "{% block ${1:content} %}",
+      "\t${0}",
+      "{% endblock %}"
+    ],
+    "description": "Create a template block"
+  },
+  "Template Macro": {
+    "prefix": "pym-macro",
+    "body": [
+      "{% macro ${1:name}(${2:args}) %}",
+      "\t${0}",
+      "{% endmacro %}"
+    ],
+    "description": "Create a template macro"
+  },
+  "Metupy Comment": {
+    "prefix": "pym-comment",
+    "body": "{# ${1:Comment} #}$0",
+    "description": "Create a Metupy block comment"
+  }
+}
