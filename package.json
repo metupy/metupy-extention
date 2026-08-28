@@ -9,7 +9,6 @@
     "vscode": "^1.80.0"
   },
   "categories": [
-    "Languages",
     "Programming Languages",
     "Snippets"
   ],
@@ -69,10 +68,6 @@
           "meta.embedded.block.python": "python"
         }
       }
-    ],
-    "icons": {
-      "pym-file-light": "metupy.svg",
-      "pym-file-dark": "metupy.svg"
-    }
+    ]
   }
 }
