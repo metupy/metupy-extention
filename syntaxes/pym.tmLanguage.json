@@ -1,0 +1,53 @@
+{
+  "scopeName": "source.pym",
+  "patterns": [
+    {
+      "name": "comment.line.pym",
+      "match": "^#.*$",
+      "captures": { "0": { "name": "comment.line.number-sign.pym" } }
+    },
+    {
+      "name": "meta.frontmatter.key.pym",
+      "match": "^([A-Za-z0-9_-]+):(.*)$",
+      "captures": {
+        "1": { "name": "keyword.control.pym" },
+        "2": { "name": "string.quoted.double.pym" }
+      }
+    },
+    {
+      "name": "separator.pym",
+      "match": "^[-─]{15,}$",
+      "captures": { "0": { "name": "meta.separator.pym" } }
+    },
+    {
+      "name": "comment.block.pym",
+      "begin": "\\{#",
+      "end": "#\\}",
+      "name": "comment.block.pym"
+    },
+    {
+      "name": "tag.template.pym",
+      "begin": "\\{%",
+      "end": "%\\}",
+      "beginCaptures": { "0": { "name": "keyword.control.pym" } },
+      "endCaptures": { "0": { "name": "keyword.control.pym" } },
+      "patterns": [
+        { "include": "source.python" }
+      ]
+    },
+    {
+      "name": "variable.template.pym",
+      "begin": "\\{{",
+      "end": "\\}}",
+      "beginCaptures": { "0": { "name": "entity.name.tag.pym" } },
+      "endCaptures": { "0": { "name": "entity.name.tag.pym" } },
+      "patterns": [
+        { "include": "source.python" }
+      ]
+    },
+    {
+      "include": "text.html.markdown"
+    }
+  ],
+  "fileTypes": ["pym"]
+}

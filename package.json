@@ -1,0 +1,78 @@
+{
+  "name": "metupy-intellisense",
+  "publisher": "PalembangPyCommunity",
+  "displayName": "Metupy IntelliSense",
+  "description": "Official IntelliSense & Syntax Highlighting for Metupy (.pym) file format — Project by PalembangPy Community",
+  "version": "1.0.2",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Languages",
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "palembangpy",
+    "palembangpy-community",
+    "metupy",
+    "pym",
+    "intellisense",
+    "syntax-highlighting",
+    "markdown",
+    "python",
+    "ssg",
+    "static-site",
+    "indonesia"
+  ],
+  "author": {
+    "name": "PalembangPy Community",
+    "url": "https://github.com/palembangpy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metupy/metupy-extention"
+  },
+  "homepage": "https://github.com/metupy/metupy-extention#readme",
+  "bugs": {
+    "url": "https://github.com/metupy/metupy-extention/issues"
+  },
+  "license": "MIT",
+  "contributes": {
+    "languages": [
+      {
+        "id": "pym",
+        "aliases": [
+          "Metupy",
+          ".pym",
+          "Metupy IntelliSense",
+          "PalembangPy Community"
+        ],
+        "extensions": [
+          ".pym"
+        ],
+        "icon": {
+          "light": "metupy.svg",
+          "dark": "metupy.svg"
+        },
+        "configuration": "./langconf.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pym",
+        "scopeName": "source.pym",
+        "path": "./syntaxes/pym.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.markdown": "markdown",
+          "meta.embedded.block.python": "python"
+        }
+      }
+    ],
+    "icons": {
+      "pym-file-light": "metupy.svg",
+      "pym-file-dark": "metupy.svg"
+    }
+  }
+}
