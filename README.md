@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/metupy/metupy-extention/blob/main/icon.png?raw=true" alt="Metupy Logo" width="128" height="128">
+  <img src="./icon.png" alt="Metupy Logo" width="128" height="128">
 </p>
 
 <h1 align="center">Metupy IntelliSense</h1>
