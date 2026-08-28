@@ -11,8 +11,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/pypi/v/metupy?style=for-the-badge&logo=python&logoColor=white" alt="PyPI Version">
-  <img src="https://img.shields.io/visual-studio-marketplace/v/PalembangPyCommunity.metupy-intellisense?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code Extension Version">
-  <br>
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
 </p>
 
