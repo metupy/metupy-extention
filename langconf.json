@@ -1,22 +1,17 @@
 {
   "comments": {
-    "lineComment": "#",
+    "lineComment": "//",
     "blockComment": ["{#", "#}"]
   },
   "brackets": [
     ["{", "}"],
     ["[", "]"],
-    ["(", ")"],
-    ["{%", "%}"],
-    ["{{", "}}"]
+    ["(", ")"]
   ],
   "autoClosingPairs": [
     { "open": "{", "close": "}" },
     { "open": "[", "close": "]" },
     { "open": "(", "close": ")" },
-    { "open": "{%", "close": "%}" },
-    { "open": "{{", "close": "}}" },
-    { "open": "{#", "close": "#}" },
     { "open": "\"", "close": "\"", "notIn": ["string"] },
     { "open": "'", "close": "'", "notIn": ["string"] }
   ],
@@ -28,7 +23,7 @@
     ["'", "'"]
   ],
   "indentationRules": {
-    "increaseIndentPattern": "{%\\s*(for|if|block|macro|with|set\\s+.*=)?\\s*.*%}",
-    "decreaseIndentPattern": "{%\\s*(endfor|endif|endblock|endmacro|endwith)\\s*%}"
+    "increaseIndentPattern": "{%\\s*(for|if)\\s+.*%}",
+    "decreaseIndentPattern": "{%\\s*(endfor|endif)\\s*%}"
   }
 }
