@@ -20,7 +20,7 @@
     "prefix": "pym-if",
     "body": [
       "{% if ${1:condition} %}",
-      "\t${0}",
+      "${0}",
       "{% endif %}"
     ],
     "description": "Create an if condition block"
@@ -29,7 +29,7 @@
     "prefix": "pym-for",
     "body": [
       "{% for ${1:item} in ${2:items} %}",
-      "\t${0}",
+      "${0}",
       "{% endfor %}"
     ],
     "description": "Create a for loop block"
@@ -38,7 +38,7 @@
     "prefix": "pym-block",
     "body": [
       "{% block ${1:content} %}",
-      "\t${0}",
+      "${0}",
       "{% endblock %}"
     ],
     "description": "Create a template block"
@@ -47,12 +47,17 @@
     "prefix": "pym-macro",
     "body": [
       "{% macro ${1:name}(${2:args}) %}",
-      "\t${0}",
+      "${0}",
       "{% endmacro %}"
     ],
     "description": "Create a template macro"
   },
-  "Metupy Comment": {
+  "Metupy Line Comment": {
+    "prefix": "pym-cmt",
+    "body": "// ${1:Comment}$0",
+    "description": "Create a Metupy line comment"
+  },
+  "Metupy Block Comment": {
     "prefix": "pym-comment",
     "body": "{# ${1:Comment} #}$0",
     "description": "Create a Metupy block comment"
