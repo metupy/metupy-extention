@@ -3,8 +3,8 @@
   "patterns": [
     {
       "name": "comment.line.pym",
-      "match": "^#.*$",
-      "captures": { "0": { "name": "comment.line.number-sign.pym" } }
+      "match": "^\\s*//.*$",
+      "captures": { "0": { "name": "comment.line.double-slash.pym" } }
     },
     {
       "name": "meta.frontmatter.key.pym",
@@ -16,7 +16,7 @@
     },
     {
       "name": "separator.pym",
-      "match": "^[-─]{15,}$",
+      "match": "^[-─]{3,}\\s*$",
       "captures": { "0": { "name": "meta.separator.pym" } }
     },
     {
